@@ -1,0 +1,128 @@
+<%- include("navbar")%>
+              
+<ul class="navbar-nav ml-auto signs ">
+                 
+                      
+   <% if(logged){ %>
+    
+  <li class="nav-item signout">
+      <a class="nav-link" href="/logout"><i class="fas fa-user-plus"></i>Sign out</a>
+  </li>
+      <% }else{ %>
+          <li class="nav-item signin">
+              <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i>Sign in </a>
+</li>
+          <li class="nav-item signup">
+           <a class="nav-link" href="/register"><i class="fas fa-user-plus"></i>Sign up</a>
+       </li>
+   
+        <% } %>
+
+
+
+
+
+</ul>
+</div>
+</nav>
+
+           <p class="paragraph">Find Best Venue For Your Celebrations.</p>
+          
+
+           <div class="city_dropdown">
+              <div class="dropdown open">
+                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <div class="cityselect">
+                       Select City
+                    </div>
+                    <div class="cityselect">
+                       <span class="caret"></span>
+                       
+                    </div>
+                 </button>
+                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    
+                    
+                       <li>
+                          <a href="mumbai.ejs " class="mumbaia" style="color:black; text-decoration:none;">
+                             Mumbai
+                          </a>
+                       </li>
+                    
+                       <li>
+                          <a href="delhi.ejs" class="delhia"  style="color:black; text-decoration:none;">
+                             Delhi
+                          </a>
+                       </li>
+                    
+                     
+                    
+                     
+                 </ul>
+              </div>
+           </div>
+
+
+
+
+
+
+<img src="\images\Banquet 1.jpg" class="image1" alt="image">
+
+
+<section id="testimonials">
+   
+   
+   <!-- carousel -->  
+  <!-- this is for a spen many testimonial by sliding-->
+
+
+<div id="testimonial-carousel" class="carousel slide" data-ride="false">
+<div class="carousel-inner">
+<div class="carousel-item active">  <!--first item active always -->
+
+ <h2 class="testimonial-text">Booking a good banquet hall means ensuring quality service for your guests. Banquet halls provide you with the requirements that you need for an event to carry out successfully so that there are no quality issues. This is what you expect from a place where you are going to arrange for a wedding</h2>
+ <img class="testimonials-image" src="\images\Banquet 1.jpg" alt="image">
+ 
+
+
+</div>
+<div class="carousel-item ">
+
+
+ <h2 class="testimonial-text">
+  Budget Friendly Rather than dealing with different service vendors at once, you only need to deal with the banquet authorities or planners, which saves a lot on your costing of the events, as it includes all the expenses that you spend under the purview of event management. From lighting to decoration, food to guest accommodation, and almost every aspect of event management.</h2>
+ <img class="testimonials-image" src="\images\wedding 1.jpg" alt="image">
+
+
+
+</div>
+<div class="carousel-item ">
+
+
+  <h2 class="testimonial-text">
+     Because time itself is like a spiral, something special happens on your birthday each year: The same energy that God invested in you at birth is present once again. </h2>
+       <img class="testimonials-image" src="\images\Birthday 1.png" alt="image">
+ 
+
+
+</div>
+</div>
+<!-- this is for previous or next button -->
+<a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+ <span class="carousel-control-prev-icon"></span>
+ <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+   <span class="carousel-control-next-icon"></span>
+</a>
+</div>
+
+ </section>
+
+
+ <%- include('footer1')%>
+ <script src="\js\script2.js"></script> 
+ 
+
+  </body> 
+     
+</html>

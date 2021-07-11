@@ -1,0 +1,159 @@
+
+   <%- include('navbar')%>
+          
+   <ul class="navbar-nav ml-auto signs ">
+                 
+                      
+    <% if(logged){ %>
+     
+   <li class="nav-item signout">
+       <a class="nav-link" href="/logout"><i class="fas fa-user-plus"></i>Sign out</a>
+   </li>
+       <% }else{ %>
+           <li class="nav-item signin">
+               <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i>Sign in </a>
+</li>
+           <li class="nav-item signup">
+            <a class="nav-link" href="/register"><i class="fas fa-user-plus"></i>Sign up</a>
+        </li>
+     
+         <% } %>
+
+
+ 
+
+
+</ul>
+</div>
+</nav>
+
+   <div class="city_dropdown" style=" position:absolute; margin:5px;">
+     <div class="dropdown open">
+        <button class="btn btn-default dropdown-toggle"style=" padding:5px; width:180px; background-color:white; border-color: black;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+           <div class="cityselect">
+              Select City
+           </div>
+           <div class="cityselect">
+              <span class="caret" style="margin:30px; padding-bottom:3px;"></span>
+              
+           </div>
+        </button>
+        <ul class="dropdown-menu" style="width:180px;" aria-labelledby="dropdownMenu1">
+           
+           
+              <li>
+                 <a href="mumbai.ejs " style="color:black; text-decoration:none;">
+                    Mumbai
+                 </a>
+              </li>
+           
+              <li>
+                 <a href="delhi.ejs"  style="color:black; text-decoration:none;">
+                    Delhi NCR
+                 </a>
+              </li>
+           
+            
+           
+            
+        </ul>
+     </div>
+  </div>
+
+
+   
+<h3 class="h3" style="margin-left: 30px;">Mumbai Banquets</h3>
+<div class="sidebar">
+<h3 class="locality">Locality</h3>
+<a class="allclass" href="#all">All</a>
+<a class="thaneclass" href="#thane">Thane</a>
+<a class="naviclass"href="#navi">Navi Mumbai</a>
+
+
+</div>
+
+<section id="all">
+
+<div class="cardcontainer ">
+    
+       
+<div class="mar">
+ <div class="card" style="width: 24rem; height: 30rem;">
+    <a href="/thane.ejs"> <img src="\images\thane.png" class="card-img-top " alt="..."></a>
+     <div class="card-body">
+       <h5 class="card-title"><br>VITS Sharanam, Thane</h5>
+<h6>Eastern Express Highway Service Road, Near New RTO 400604 Andheri West (Mumbai)  </h6>   
+       
+       <a href="/thane.ejs" class="btn btn-primary">show</a>
+       <a href="/" class="btn btn-primary">Location</a>
+     </div>
+   </div>
+ </div> 
+ 
+  <div class="mar">
+    <div class="card" style="width: 24rem; height: 30rem;">
+       <a href="/navi.ejs"> <img src="\images\navi.png" class="card-img-top " alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"><br>The Regenza By Tunga, Vashi, Mumbai</h5>
+   <h6>Plot No.37, Sector 30-A, Vashi, Navi Mumbai, Maharashtra 400703 </h6>   
+
+          <a href="/navi.ejs" class="btn btn-primary">show</a>
+          <a href="#" class="btn btn-primary">Location</a>
+        </div>
+      </div>
+    </div> 
+     
+ 
+    
+
+
+                         </section>
+
+                         <section id="thane">
+                          
+                           <div class="cardcontainer ">
+    
+                            <div class="mar">
+                                <div class="card" style="width: 24rem; height: 30rem;">
+                                   <a href="/thane.ejs"> <img src="\images\thane.png" class="card-img-top " alt="..."></a>
+                                    <div class="card-body">
+                                      <h5 class="card-title"><br>VITS Sharanam, Thane</h5>
+                               <h6>Eastern Express Highway Service Road, Near New RTO 400604 Andheri West (Mumbai)  </h6>   
+                                      
+                                      <a href="/thane.ejs" class="btn btn-primary">show</a>
+                                      <a href="/" class="btn btn-primary">Location</a>
+                                    </div>
+                                  </div>
+                                </div> 
+                             
+                            
+
+
+                         </section>
+                         <section id="navi">
+
+                           <div class="cardcontainer ">
+    
+                            <div class="mar">
+                                <div class="card" style="width: 24rem; height: 30rem;">
+                                   <a href="/navi.ejs"> <img src="\images\navi.png" class="card-img-top " alt="..."></a>
+                                    <div class="card-body">
+                                      <h5 class="card-title"><br>The Regenza By Tunga, Vashi, Mumbai</h5>
+                               <h6>Plot No.37, Sector 30-A, Vashi, Navi Mumbai, Maharashtra 400703 </h6>   
+   
+                                      <a href="/navi.ejs" class="btn btn-primary">show</a>
+                                      <a href="#" class="btn btn-primary">Location</a>
+                                    </div>
+                                  </div>
+                                </div> 
+
+
+                         </section>
+                         
+                  
+                         <%- include('footer1')%>
+
+                           <script src="\js\script2.js"></script>
+                
+</body>
+</html>

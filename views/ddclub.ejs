@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>partyvenue</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-signin-client_id" content="27302682434-njglblgi05r4urtv55v1hc3e824mt2a4.apps.googleusercontent.com">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="\css\styles1.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg ">
+       
+            <button class="navbar-toggler "   type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.ejs">Part<span class="venue">yVenue</span></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav links ">
+                    <li class="nav-item active">
+                        <a class="nav-link home" href="index.ejs">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                            <li class="nav-item contact">
+                                <a class="nav-link" href="mail.ejs">Contact</a>
+                            </li>
+                           
+                    </li>
+                </ul>
+                  
+              
+                <ul class="navbar-nav ml-auto signs ">
+             
+                        <li class="nav-item signout">
+                            <a class="nav-link" href="/logout"><i class="fas fa-user-plus"></i>Sign out</a>
+                        </li>
+                      
+                </ul>
+
+</div>
+</nav>
+        <div id="carousel" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+             <div class="carousel-item active">  <!--first item active always -->
+            
+           
+              <img class="image" src="\images\dd-club-rohini-delhi.png" alt="image">
+              
+            
+            
+            </div>
+            <div class="carousel-item ">
+            
+            
+             
+              <img class="image" src="\images\sevenseas1.png" alt="image">
+             
+            
+            
+            </div>
+            <div class="carousel-item ">
+            
+            
+               
+                    <img class="image" src="\images\seven seas4.png" alt="image">
+              
+             
+             
+             </div>
+             <div class="carousel-item ">
+            
+            
+               
+                <img class="image" src="\images\seven seas5.png" alt="image">
+          
+         
+         
+         </div>
+            </div>
+            <!-- this is for previous or next button -->
+            <a class="carousel-control-prev previous" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <a class="carousel-control-next next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            </div>
+            <h2 class="sevensea">DD Club, Rohini, Delhi</h2>
+            <h5 class="sevensea2">DD Club, Rajapur, Pocket 16, Sector 13, Rohini, Delhi, 110085 .</h5>
+        
+
+                                  <h2 style="margin: 50px;">About the Venue</h2>
+                                 <div id="readless">
+                               <span>
+                                 Enter the dream world filled with luxurious possibilities at the exquisite Seven Seas Hotel, Rohini, Delhi. This majestic 5-star is -A Truly Magnificient Destination
+                                  To Make Your Celebrations A Royal Affair! It is voted as one of the best hotels for high profile recept...
+                                  <button class="readmore"style="color: red;">readmore</button>
+                                 </span>
+                            
+                                 </div>
+                                 <div id="readmore">
+                               <span>
+                                 Enter the dream world filled with luxurious possibilities at the exquisite Seven Seas Hotel, Rohini, Delhi. This majestic 5-star is -A Truly Magnificient Destination To Make Your Celebrations A Royal Affair! It is voted as one of the best hotels for high profile receptions and destination weddings. Apart from the international hospitality, this hotel has been host to many celebrities, political dignitaries and NRI delegates. Hotel Seven Seas, Rohini, Delhi, offers numerous activities for the guests to indulge in rejuvenation like- rejuvenating spa, unisex salon, infinity rooftop swimming pool, fitness center, private Cabanas and 2-night clubs.
+                                 Seven Seas Hotel, Delhi, offers multiple party areas namely- By the Pool, Bougain Villea (alfresco), Hamilton, Bridewell, and Wellington. The hotel is distinguished for its global gastronomical cuisines and houses excellent fine dining cafes, bistros, and bars namely- Seventh Sense, Cake Boutique, and Private Dining areas. Relish the finest of Indian, Chinese, Thai, Japanese, Continental, Italian, Mediterranean, Lebanese and French cuisines in the vegetarian and non-vegetarian assortments. Seven Seas Hotel, Rohini, Sector 3, Delhi, is a signature blend of the Victorian era with a seamless blend of contemporary architecture for a truly sensual experience.
+                                 7 Seas Hotel, New Delhi, offers a whopping parking arena for around 2000 vehicles for all the VIP's and international delegates on your guest list. It offers extravagant rooms and suites with contemporary furnishing, subtle decor, to pleasure you with the memorable guest experience. The hotel stocks some of the best Indian plus international wines and spirits to ensure you have a gala time. It also comes with its own set of a professionally managed crew of decorators, to ensure your lavish affair is as glamorous as you desired. Go ahead and plan your royal affairs and corporate retreats with the fantastic Seven Seas Hotel, Mangalam Place, Delhi. 
+                                 <button class="readless" style="color: red;">readless</button>
+                              </span>
+                            
+                           </div>
+                        <hr style="margin: 60px;">
+                        <h2 class="prices">See Pricing:</h2>
+                <div class="guestdiv">
+<form action="" method="">
+
+
+
+   <h5 style="text-align: center; padding-bottom: 20px;
+   padding-top: 30px;">Enter your guest numbers.</h5>
+  <h4 class="guest">
+    <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <g id="date copy">
+       <g id="Combined Shape">
+           <path fill-rule="evenodd" clip-rule="evenodd" d="M20.553 23.5297C24.2891 23.5297 27.3178 20.501 27.3178 16.7649C27.3178 13.0287 24.2891 10 20.553 10C16.8168 10 13.7881 13.0287 13.7881 16.7649C13.7881 20.501 16.8168 23.5297 20.553 23.5297ZM20.553 21.5762C17.8957 21.5762 15.7416 19.4221 15.7416 16.7649C15.7416 14.1076 17.8957 11.9535 20.553 11.9535C23.2102 11.9535 25.3643 14.1076 25.3643 16.7649C25.3643 19.4221 23.2102 21.5762 20.553 21.5762ZM33.1059 34.1292V37.0233C33.1059 37.5627 32.6686 38 32.1292 38C31.5898 38 31.1525 37.5627 31.1525 37.0233V34.1292C31.1525 31.472 28.9983 29.3178 26.3411 29.3178H14.7649C12.1076 29.3178 9.95349 31.472 9.95349 34.1292V37.0233C9.95349 37.5627 9.51619 38 8.97674 38C8.4373 38 8 37.5627 8 37.0233V34.1292C8 30.3931 11.0287 27.3643 14.7649 27.3643H26.3411C30.0772 27.3643 33.1059 30.3931 33.1059 34.1292ZM41.7881 37.0233V34.1292C41.7858 31.0456 39.6995 28.3542 36.7145 27.5835C36.1922 27.4486 35.6594 27.7627 35.5246 28.285C35.3897 28.8073 35.7038 29.3401 36.2261 29.4749C38.3491 30.0231 39.833 31.9373 39.8346 34.1299V37.0233C39.8346 37.5627 40.2719 38 40.8114 38C41.3508 38 41.7881 37.5627 41.7881 37.0233ZM34.0579 16.7721C34.0579 14.5745 32.5688 12.6562 30.4399 12.1111C29.9173 11.9773 29.6021 11.4452 29.7359 10.9226C29.8698 10.4 30.4019 10.0848 30.9244 10.2186C33.9177 10.985 36.0113 13.6822 36.0113 16.7721C36.0113 19.862 33.9177 22.5591 30.9244 23.3255C30.4019 23.4594 29.8698 23.1442 29.7359 22.6216C29.6021 22.099 29.9173 21.5669 30.4399 21.4331C32.5688 20.888 34.0579 18.9697 34.0579 16.7721Z" fill="black"></path>
+           <path d="M41.7881 34.1292H42.1881V34.1289L41.7881 34.1292ZM36.7145 27.5835L36.8145 27.1962H36.8145L36.7145 27.5835ZM35.5246 28.285L35.1373 28.185V28.185L35.5246 28.285ZM36.2261 29.4749L36.3261 29.0876H36.3261L36.2261 29.4749ZM39.8346 34.1299H40.2346V34.1296L39.8346 34.1299ZM30.4399 12.1111L30.3407 12.4986L30.4399 12.1111ZM30.9244 10.2186L30.8252 10.6061V10.6061L30.9244 10.2186ZM30.9244 23.3255L30.8252 22.938L30.9244 23.3255ZM30.4399 21.4331L30.3407 21.0456L30.4399 21.4331ZM26.9178 16.7649C26.9178 20.2801 24.0682 23.1297 20.553 23.1297V23.9297C24.51 23.9297 27.7178 20.7219 27.7178 16.7649H26.9178ZM20.553 10.4C24.0682 10.4 26.9178 13.2496 26.9178 16.7649H27.7178C27.7178 12.8078 24.51 9.6 20.553 9.6V10.4ZM14.1881 16.7649C14.1881 13.2496 17.0378 10.4 20.553 10.4V9.6C16.5959 9.6 13.3881 12.8078 13.3881 16.7649H14.1881ZM20.553 23.1297C17.0378 23.1297 14.1881 20.2801 14.1881 16.7649H13.3881C13.3881 20.7219 16.5959 23.9297 20.553 23.9297V23.1297ZM15.3416 16.7649C15.3416 19.643 17.6748 21.9762 20.553 21.9762V21.1762C18.1166 21.1762 16.1416 19.2012 16.1416 16.7649H15.3416ZM20.553 11.5535C17.6748 11.5535 15.3416 13.8867 15.3416 16.7649H16.1416C16.1416 14.3285 18.1166 12.3535 20.553 12.3535V11.5535ZM25.7643 16.7649C25.7643 13.8867 23.4311 11.5535 20.553 11.5535V12.3535C22.9893 12.3535 24.9643 14.3285 24.9643 16.7649H25.7643ZM20.553 21.9762C23.4311 21.9762 25.7643 19.643 25.7643 16.7649H24.9643C24.9643 19.2012 22.9893 21.1762 20.553 21.1762V21.9762ZM33.5059 37.0233V34.1292H32.7059V37.0233H33.5059ZM32.1292 38.4C32.8896 38.4 33.5059 37.7836 33.5059 37.0233H32.7059C32.7059 37.3418 32.4477 37.6 32.1292 37.6V38.4ZM30.7525 37.0233C30.7525 37.7836 31.3688 38.4 32.1292 38.4V37.6C31.8107 37.6 31.5525 37.3418 31.5525 37.0233H30.7525ZM30.7525 34.1292V37.0233H31.5525V34.1292H30.7525ZM26.3411 29.7178C28.7774 29.7178 30.7525 31.6929 30.7525 34.1292H31.5525C31.5525 31.251 29.2192 28.9178 26.3411 28.9178V29.7178ZM14.7649 29.7178H26.3411V28.9178H14.7649V29.7178ZM10.3535 34.1292C10.3535 31.6929 12.3285 29.7178 14.7649 29.7178V28.9178C11.8867 28.9178 9.55349 31.251 9.55349 34.1292H10.3535ZM10.3535 37.0233V34.1292H9.55349V37.0233H10.3535ZM8.97674 38.4C9.7371 38.4 10.3535 37.7836 10.3535 37.0233H9.55349C9.55349 37.3418 9.29527 37.6 8.97674 37.6V38.4ZM7.6 37.0233C7.6 37.7836 8.21639 38.4 8.97674 38.4V37.6C8.65822 37.6 8.4 37.3418 8.4 37.0233H7.6ZM7.6 34.1292V37.0233H8.4V34.1292H7.6ZM14.7649 26.9643C10.8078 26.9643 7.6 30.1722 7.6 34.1292H8.4C8.4 30.614 11.2496 27.7643 14.7649 27.7643V26.9643ZM26.3411 26.9643H14.7649V27.7643H26.3411V26.9643ZM33.5059 34.1292C33.5059 30.1722 30.2981 26.9643 26.3411 26.9643V27.7643C29.8563 27.7643 32.7059 30.614 32.7059 34.1292H33.5059ZM41.3881 34.1292V37.0233H42.1881V34.1292H41.3881ZM36.6145 27.9708C39.4229 28.6959 41.3859 31.2281 41.3881 34.1295L42.1881 34.1289C42.1857 30.863 39.976 28.0125 36.8145 27.1962L36.6145 27.9708ZM35.9119 28.385C35.9915 28.0766 36.3061 27.8911 36.6145 27.9708L36.8145 27.1962C36.0783 27.0061 35.3273 27.4488 35.1373 28.185L35.9119 28.385ZM36.3261 29.0876C36.0177 29.008 35.8322 28.6934 35.9119 28.385L35.1373 28.185C34.9472 28.9212 35.3899 29.6721 36.1261 29.8622L36.3261 29.0876ZM40.2346 34.1296C40.2329 31.7547 38.6256 29.6814 36.3261 29.0876L36.1261 29.8622C38.0726 30.3648 39.4331 32.1199 39.4346 34.1302L40.2346 34.1296ZM40.2346 37.0233V34.1299H39.4346V37.0233H40.2346ZM40.8114 37.6C40.4928 37.6 40.2346 37.3418 40.2346 37.0233H39.4346C39.4346 37.7836 40.051 38.4 40.8114 38.4V37.6ZM41.3881 37.0233C41.3881 37.3418 41.1299 37.6 40.8114 37.6V38.4C41.5717 38.4 42.1881 37.7836 42.1881 37.0233H41.3881ZM30.3407 12.4986C32.2926 12.9984 33.6579 14.7572 33.6579 16.7721H34.4579C34.4579 14.3918 32.845 12.314 30.5391 11.7236L30.3407 12.4986ZM29.3484 10.8234C29.1599 11.56 29.6041 12.31 30.3407 12.4986L30.5391 11.7236C30.2305 11.6446 30.0444 11.3304 30.1234 11.0218L29.3484 10.8234ZM31.0237 9.83114C30.2871 9.64254 29.537 10.0868 29.3484 10.8234L30.1234 11.0218C30.2025 10.7132 30.5167 10.5271 30.8252 10.6061L31.0237 9.83114ZM36.4113 16.7721C36.4113 13.4995 34.194 10.6429 31.0237 9.83114L30.8252 10.6061C33.6415 11.3272 35.6113 13.8649 35.6113 16.7721H36.4113ZM31.0237 23.713C34.194 22.9013 36.4113 20.0447 36.4113 16.7721H35.6113C35.6113 19.6793 33.6415 22.217 30.8252 22.938L31.0237 23.713ZM29.3484 22.7208C29.537 23.4574 30.2871 23.9016 31.0237 23.713L30.8252 22.938C30.5167 23.0171 30.2025 22.831 30.1234 22.5224L29.3484 22.7208ZM30.3407 21.0456C29.6041 21.2342 29.1599 21.9842 29.3484 22.7208L30.1234 22.5224C30.0444 22.2138 30.2305 21.8996 30.5391 21.8206L30.3407 21.0456ZM33.6579 16.7721C33.6579 18.787 32.2926 20.5458 30.3407 21.0456L30.5391 21.8206C32.845 21.2302 34.4579 19.1524 34.4579 16.7721H33.6579Z" fill="black"></path>
+       </g>
+   </g>
+ 
+</svg>Guests   :</h4>
+   <input type="number" min="5" max="1000"  id="guests" value="5" ><br>
+   
+      
+  </form>
+</div>                   
+    <div class="pricemenu">
+       <div class="card" style="width: 20rem; height: 13rem;text-align: center; position:absolute;left:1100px; top:940px;">
+           <div class="card-body">
+             <h5 class="card-title"style="margin-bottom:30px;">Prices<br></h5>
+             <span style=" margin-bottom: 20px;padding-right:10px; color: grey;" >Vegetarion:  <input type="submit" href="pricess" class="btn btn-outline-danger veg" value="₹3000/per plate" style="margin-right: 5px; margin-left:40px;margin-bottom:20px;"></span><br>
+              <span style=" margin-bottom: 20px;padding-right:10px; color: grey;" >Non-Vegetarion:  <input type="submit" href="pricess" class="btn btn-outline-danger nonveg"  value="₹3600/per plate" style="margin-right:5px;margin-left:3px;"> </span>
+       
+
+           </div>
+         </div>
+  
+       </div>
+
+   <div class="pricess">
+      <h3 class="pricehead" style=" padding-top:30px;text-decoration: underline; ">Price</h3>
+      Guests        :<span class="guestsno" style="padding-left: 70px;">guests</span><br>
+      Plate Price   :<span class="plates"  style="padding-left: 50px;">Plate</span><br>
+      BanquetRent   :<span class="banquetrent"  style="padding-left: 50px;">60000</span><br>
+      <hr style="margin-left: 1100px;"><br>
+      Total Price   :<span class="totalno"  style="padding-left: 50px;">total</span><br>
+      <a href="#" class="btn btn-danger  cancelbtn"style="margin-top:20px; ">Cancel</a>
+     <br> <a href="#bookform" class="btn btn-danger " id="booking" style="margin-top:20px;padding-left:20px;">Book</a>
+   </div>
+
+   <div class="bookform">
+    <h1 class="details">Details</h1>
+  
+    <form action='/pay' method="POST" class="bookinfo">
+    
+        <label for="" style="padding-right: 30px;font-size:large;"> Name</label>
+        <input type="text" name="name" id="nametext" required="required" value= "<%= firstname %>"readonly style="font-size:large;margin-top: 15px;"> <br>
+        <label for=""style="padding-right: 30px;font-size:large;">Email</label>
+        <input type="email" name="email" id="" required="required" value= "<%= email %>"readonly style="font-size:large;margin-top: 25px;"> <br>
+        <label for=""style="padding-right: 30px;font-size:large;">Date</label>
+        <input type="date" name="date" id="dateseven" placeholder="yyyy-mm-dd" required="required" style="font-size:large;margin-top: 25px; width:210px"><br>
+        <label for=""style="padding-right: 30px;font-size:large;">Banquet</label>
+        <input type="text" name="banquet" id="banq" required="required" value="DD Club, Rajapur, Pocket 16, Sector 13, Rohini, Delhi, 110085" readonly style="font-size:large;margin-top: 25px;"><br>
+        <label for=""style="padding-right: 30px;font-size:large;">Guests</label>
+        <input type="number" name="guest" id="bookguest" required="required" value="" readonly style="font-size:large;margin-top: 25px;"><br>
+        <label for=""style="padding-right: 30px;font-size:large;">Amount</label>
+        <input type="Number" name="amount" id="amount" value=""readonly required="required" style="font-size:large;margin-top: 25px;"><br>
+       
+        <input href="#" type="submit" class="paymentbtn" value="Make payment" >
+    </form>
+  </div>
+  
+
+  <footer id="footer">
+    <div class="container">
+   
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h4 class="border-bottom pb-2">Comments</h4>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="">Write a comment</label>
+                    <textarea id="textarea" rows="3" class="form-control" placeholder="Write your comment..."></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button id="submitBtn" class="btn btn-primary float-right">Post comment</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="typing text-success"></div>
+                <ul class="comment__box">
+                    <!-- <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h6>John Doe</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque,
+                                    exercitationem fuga sint enim non cupiditate deserunt soluta consequuntur
+                                    blanditiis!</p>
+                                <div>
+                                  <i class="far fa-clock"></i>
+                                    <small>11:30 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                   <!-- <li class="comment">
+                        <div class="card border-light mb-3">
+                            <div class="card-body">
+                                <h6>John Doe</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque,
+                                    exercitationem fuga sint enim non cupiditate deserunt soluta consequuntur
+                                    blanditiis!</p>
+                                <div>
+                                  <i class="far fa-clock"></i>
+                                    <small>11:30 PM</small> -->
+                                <!-- </div>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+   
+                                <script src="\js\script.js"></script>
+                                <script src="\js\script1.js"></script>
+                              
+                                <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      let username 
+    let socket = io()
+    do {
+        username = "<%= firstname %>"
+    } while(!username)
+    
+    const textarea = document.querySelector('#textarea')
+    const submitBtn = document.querySelector('#submitBtn')
+    const commentBox = document.querySelector('.comment__box')
+    
+    submitBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        let comment = textarea.value
+        if(!comment) {
+            return
+        }
+        postComment(comment)
+    })
+    
+    function postComment(comment) {
+        // Append to dom
+        let data = {
+            username: username,
+            comment: comment
+        }
+        appendToDom(data)
+        textarea.value = ''
+        // Broadcast
+        broadcastComment(data)
+        // Sync with Mongo Db
+        syncWithDb(data)
+    
+    }
+    
+    function appendToDom(data) {
+        let lTag = document.createElement('li')
+        lTag.classList.add('comment', 'mb-3')
+    
+        let markup = `
+                            <div class="card border-light mb-3">
+                                <div class="card-body">
+                                    <h6>${data.username}</h6>
+                                    <p>${data.comment}</p>
+                                    <div>
+                                      <i class="far fa-clock"></i>
+                                        <small>${moment(data.time).format('LT')}</small>
+                                    </div>
+                                </div>
+                            </div>
+        `
+        lTag.innerHTML = markup
+    
+        commentBox.prepend(lTag)
+    }
+    
+    function broadcastComment(data) {
+        // Socket
+        socket.emit('comment', data)
+    }
+    
+    socket.on('comment', (data) => {
+        appendToDom(data)
+    })
+    let timerId = null
+    function debounce(func, timer) {
+        if(timerId) {
+            clearTimeout(timerId)
+        }
+        timerId = setTimeout(() => {
+            func()
+        }, timer)
+    }
+    let typingDiv = document.querySelector('.typing')
+    socket.on('typing', (data) => {
+        typingDiv.innerText = `${data.username} is typing...`
+        debounce(function() {
+            typingDiv.innerText = ''
+        }, 1000)
+    })
+    
+    // Event listner on textarea
+    textarea.addEventListener('keyup', (e) => {
+        socket.emit('typing', { username })
+    })
+    
+    // Api calls 
+    
+    function syncWithDb(data) {
+        const headers = {
+            'Content-Type': 'application/json'
+        }
+        fetch('/api/comments', { method: 'Post', body:  JSON.stringify(data), headers})
+            .then(response => response.json())
+            .then(result => {
+                console.log(result)
+            })
+    }
+    
+    function fetchComments () {
+        fetch('/api/comments')
+            .then(res => res.json())
+            .then(result => {
+                result.forEach((comment) => {
+                    comment.time = comment.createdAt
+                    appendToDom(comment)
+                })
+            })
+    }
+    
+    window.onload = fetchComments
+      </script>                      
+
+                          
+ <div class="social-icons">
+  <a style="color:black;" href="https://www.facebook.com/campaign/landing.php?campaign_id=1653993517&extra_1=s%7Cc%7C318504235901%7Ce%7Cfacebook%20%27%7C&placement=&creative=318504235901&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D1653993517%26adgroupid%3D63066387003%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-360705453827%26loc_physical_ms%3D9061715%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAn7L-BRBbEiwAl9UtkH_bE0iOHC7ZU9O0Cr0xOLKWB8nBH402NAQ_WnSKfHFfhIIhQQsDwxoCtOcQAvD_BwE"><i class="fab fa-facebook" ></i></a>
+<a style="color:black;" href="https://www.instagram.com/"><i class="fab fa-instagram" ></i></a>
+<a style="color:black;"  href="https://twitter.com/"> <i class="fab fa-twitter-square"></i></a>
+</div>
+  
+
+<p>© Copyright 2020 partyvenue</p>
+
+</footer>
+
+</body> 
+  
+</html>

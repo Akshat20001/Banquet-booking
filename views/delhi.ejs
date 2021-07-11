@@ -1,0 +1,572 @@
+
+   <%- include('navbar')%>
+          
+   <ul class="navbar-nav ml-auto signs ">
+                 
+                      
+    <% if(logged){ %>
+     
+   <li class="nav-item signout">
+       <a class="nav-link" href="/logout"><i class="fas fa-user-plus"></i>Sign out</a>
+   </li>
+       <% }else{ %>
+           <li class="nav-item signin">
+               <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i>Sign in </a>
+</li>
+           <li class="nav-item signup">
+            <a class="nav-link" href="/register"><i class="fas fa-user-plus"></i>Sign up</a>
+        </li>
+     
+         <% } %>
+
+
+ 
+
+
+</ul>
+</div>
+</nav>
+
+   <div class="city_dropdown" style=" position:absolute; margin:5px;">
+     <div class="dropdown open">
+        <button class="btn btn-default dropdown-toggle"style=" padding:5px; width:180px; background-color:white; border-color: black;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+           <div class="cityselect">
+              Select City
+           </div>
+           <div class="cityselect">
+              <span class="caret" style="margin:30px; padding-bottom:3px;"></span>
+              
+           </div>
+        </button>
+        <ul class="dropdown-menu" style="width:180px;" aria-labelledby="dropdownMenu1">
+           
+           
+              <li>
+                 <a href="mumbai.ejs " style="color:black; text-decoration:none;">
+                    Mumbai
+                 </a>
+              </li>
+           
+              <li>
+                 <a href="delhi.ejs"  style="color:black; text-decoration:none;">
+                    Delhi NCR
+                 </a>
+              </li>
+           
+              
+           
+            
+        </ul>
+     </div>
+  </div>
+
+
+   
+<h3 class="h3" style="margin-left: 30px;">Delhi NCR Banquets</h3>
+<div class="sidebar">
+<h3 class="locality">Locality</h3>
+<a class="allclass" href="#all">All</a>
+<a class="noidaclass" href="#noida">Noida</a>
+<a class="dwarkaclass"href="#dwarka">Dwarka</a>
+<a class="rohiniclass" href="#rohini">Rohini</a>
+<a class="connaughtclass" href="#connaught">Connaught Place</a>
+<a class="shahdaraclass" href="#shahdara">Shahdara</a>
+
+</div>
+
+<section id="all">
+
+<div class="cardcontainer ">
+    
+       
+<div class="mar">
+ <div class="card" style="width: 24rem; height: 30rem;">
+    <a href="/sevenseas.ejs"> <img src="\images\seven-seas-hotel-rohini-delhi.png" class="card-img-top " alt="..."></a>
+     <div class="card-body">
+       <h5 class="card-title">Seven seas hotel, Rohini, Delhi<br></h5>
+<h6>Seven Seas Hotel, 12, Mangalam Place, Sector 3, Rohini, New Delhi, Delhi 110085. </h6>   
+       
+       <a href="/sevenseas.ejs" class="btn btn-primary">show</a>
+       <a href="/gps-js.ejs" class="btn btn-primary">Location</a>
+     </div>
+   </div>
+ </div> 
+ 
+ <div class="mar">
+     <div class="card" style="width: 24rem; height: 30rem;">
+        <a href="grandutsav.ejs"> <img src="\images\grand-utsav-rohini-delhi.png" class="card-img-top " alt="..."></a>
+         <div class="card-body">
+           <h5 class="card-title">Grand Utsav, Rohini, Delhi<br></h5>
+           <h6>Grand Utsav, Pocket B-10, Rohini Sector 3, Delhi - 110085, Near Jaipur Golden Hospital .</h6>
+      
+           <a href="grandutsav.html" class="btn btn-primary">show</a>
+           <a href="#" class="btn btn-primary">Location</a>
+         </div>
+       </div>
+     </div> 
+     
+ 
+     <div class="mar">
+         <div class="card" style="width: 24rem; height: 30rem;">
+            <a href="ddclub.ejs"> <img src="\images\dd-club-rohini-delhi.png" class="card-img-top " alt="..."></a>
+             <div class="card-body">
+               <h5 class="card-title">Dd club, Rohini, Delhi</h5>
+               <h6>DD Club, Rajapur, Pocket 16, Sector 13, Rohini, Delhi, 110085.</h6>
+            
+               <a href="ddclub.ejs" class="btn btn-primary">show</a>
+               <a href="#" class="btn btn-primary">Location</a>
+             </div>
+           </div>
+         </div> 
+         
+         </div>
+         <div class="cardcontainer ">
+    
+       
+           <div class="mar">
+           <div class="card" style="width: 24rem; height: 30rem;">
+              <a href="pearlgrand.ejs"> <img src="\images\pearl-grand-galaxy-shahdara-delhi.png" class="card-img-top " alt="..."></a>
+               <div class="card-body">
+                 <h5 class="card-title">Pearl grand galaxy (surajmal vihar), Shahdara, Delhi<br></h5>
+          <h6> Pearl Grand Galaxy Banquet, Plot No. 3, C.B.D Ground, Opposite Kempinski, Vishwas Nagar Extension, Shahdara, Vishwas Nagar, New Delhi, Delhi 110032. </h6>   
+                
+                 <a href="pearlgrand.ejs" class="btn btn-primary">show</a>
+                 <a href="#" class="btn btn-primary">Location</a>
+               </div>
+             </div>
+           </div> 
+           
+           <div class="mar">
+               <div class="card" style="width: 24rem; height: 30rem;">
+                  <a href="leela.ejs"> <img src="\images\The_Leela_Ambience_Convention_Hotel-Delhi-Convention_hall-628980.png" class="card-img-top " alt="..."></a>
+                   <div class="card-body">
+                     <h5 class="card-title">Leela ambience convention hotel, Shahdara, Delhi
+                       <br></h5>
+                     <h6>Leela Ambiance Convention Hotel, 1 Cbd, Maharaja Surajmal Road, Near Yamuna Sports Complex, Vishwas Nagar Extension, Vishwas Nagar, Shahdara, Delhi, 110032.</h6>
+                   
+                     <a href="leela.ejs" class="btn btn-primary">show</a>
+                     <a href="#" class="btn btn-primary">Location</a>
+                   </div>
+                 </div>
+               </div> 
+               
+           
+               <div class="mar">
+                   <div class="card" style="width: 24rem; height: 30rem;">
+                      <a href="radha.ejs"> <img src="\images\radha-palace-shahdara-delhi.png" class="card-img-top " alt="..."></a>
+                       <div class="card-body">
+                         <h5 class="card-title">Radha palace, Shahdara, Delhi</h5>
+                         <h6>Radha Palace, Aggarwal Fun City Mall, CBD Ground, Near Karkardooma Court, Vishwas Nagar Extension, Vishwas Nagar, Shahdara, New Delhi, Delhi 110032.</h6>
+                       
+                         <a href="radha.ejs" class="btn btn-primary">show</a>
+                         <a href="#" class="btn btn-primary">Location</a>
+                       </div>
+                     </div>
+                   </div> 
+                   
+                   </div>
+
+
+                  
+                   <div class="cardcontainer ">
+    
+       
+                     <div class="mar">
+                     <div class="card" style="width: 24rem; height: 30rem;">
+                        <a href="raddison.ejs"> <img src="\images\radisson-blu-marina-connaught-place-delhi.png" class="card-img-top " alt="..."></a>
+                         <div class="card-body">
+                           <h5 class="card-title">Radisson blu marina, Connaught Place, Delhi<br></h5>
+                    <h6> Radisson Blu Marina, G-59, Connaught Cir, Block G, Connaught Place, New Delhi, Delhi 110001. </h6>   
+                   
+                           <a href="raddison.ejs" class="btn btn-primary">show</a>
+                           <a href="#" class="btn btn-primary">Location</a>
+                         </div>
+                       </div>
+                     </div> 
+                     
+                     <div class="mar">
+                         <div class="card" style="width: 24rem; height: 30rem;">
+                            <a href="le.ejs"> <img src="\images\Le Meridien 3.png" class="card-img-top " alt="..."></a>
+                             <div class="card-body">
+                               <h5 class="card-title">Le meridien, Connaught Place, Delhi<br></h5>
+                               <h6>Le Meridien, Windsor Place, New Delhi, Delhi 110001.</h6>
+                               
+                               <a href="le.ejs" class="btn btn-primary">show</a>
+                               <a href="#" class="btn btn-primary">Location</a>
+                             </div>
+                           </div>
+                         </div> 
+                         
+                     
+                         <div class="mar">
+                             <div class="card" style="width: 24rem; height: 30rem;">
+                                <a href="park.ejs"> <img src="\images\the-park-hotel-connaught-place-delhi.png" class="card-img-top " alt="..."></a>
+                                 <div class="card-body">
+                                   <h5 class="card-title">The park hotel, Connaught Place, Delhi</h5>
+                                   <h6>The Park Hotel, 15, Sansad Marg, Hanuman Road Area, Connaught Place, New Delhi, Delhi 110001.</h6>
+                             
+                                   <a href="park.ejs" class="btn btn-primary">show</a>
+                                   <a href="#" class="btn btn-primary">Location</a>
+                                 </div>
+                               </div>
+                             </div> 
+                             
+                             </div>
+
+
+       
+
+                           
+                           <div class="cardcontainer ">
+    
+    
+       
+                               <div class="mar">
+                               <div class="card" style="width: 24rem; height: 30rem;">
+                                  <a href="raddison1.ejs"> <img src="\images\raddison.png" class="card-img-top " alt="..."></a>
+                                   <div class="card-body">
+                                     <h5 class="card-title">Radisson blu, Dwarka, Delhi<br></h5>
+                              <h6> Radisson Blu, Plot 4, Sector 13, Dwarka, New Delhi, Delhi 110075. </h6>   
+                                  
+                                     <a href="raddison1.ejs" class="btn btn-primary">show</a>
+                                     <a href="#" class="btn btn-primary">Location</a>
+                                   </div>
+                                 </div>
+                               </div> 
+                               
+                               <div class="mar">
+                                   <div class="card" style="width: 24rem; height: 30rem;">
+                                      <a href="surya.ejs"> <img src="\images\surya-grand-banquet.png" class="card-img-top " alt="..."></a>
+                                       <div class="card-body">
+                                         <h5 class="card-title">Surya grand banquet, Dwarka, Delhi.<br></h5>
+                                         <h6>Surya Grand Banquet, Dattaram Marg, Sector - 7, Near Palam Dwarka Flyover,New Delhi 110075.</h6>
+                                      
+                                         <a href="surya.ejs" class="btn btn-primary">show</a>
+                                         <a href="#" class="btn btn-primary">Location</a>
+                                       </div>
+                                     </div>
+                                   </div> 
+                                   
+                               
+                                   <div class="mar">
+                                       <div class="card" style="width: 24rem; height: 30rem;">
+                                          <a href="vivanta.ejs"> <img src="\images\vivanta-by-taj.png" class="card-img-top " alt="..."></a>
+                                           <div class="card-body">
+                                             <h5 class="card-title">Vivanta by taj, Dwarka, Delhi</h5>
+                                             <h6>Vivanta by Taj, Metro Station Road, Sector 21, Dwarka, New Delhi, Delhi 110075.</h6>
+                                            
+                                             <a href="vivanta.ejs" class="btn btn-primary">show</a>
+                                             <a href="#" class="btn btn-primary">Location</a>
+                                           </div>
+                                         </div>
+                                       </div> 
+                                       
+                                       </div>
+
+                                    
+                                
+<div class="cardcontainer ">
+    
+       
+<div class="mar">
+<div class="card" style="width: 24rem; height: 30rem;">
+  <a href="js.ejs"> <img src="\images\j-s-garden-noida-delhi-1.png" class="card-img-top " alt="..."></a>
+   <div class="card-body">
+     <h5 class="card-title">J s garden, Sector 132, Noida<br></h5>
+<h6> J S Garden, A36, Block A, Sector 132, Noida, Uttar Pradesh 201304. </h6>   
+  
+     <a href="js.ejs" class="btn btn-primary">show</a>
+     <a href="#" class="btn btn-primary">Location</a>
+   </div>
+ </div>
+</div> 
+
+<div class="mar">
+   <div class="card" style="width: 24rem; height: 30rem;">
+      <a href="ss.ejs"> <img src="\images\ss-grand-party-lawn-and-banquet-noida-delhi.png" class="card-img-top " alt="..."></a>
+       <div class="card-body">
+         <h5 class="card-title">Ss grand party lawn and banquet, Sector 70, Noida<br></h5>
+         <h6>SS Grand Party Lawn And Banquet, Basai, Sector 70, Noida, Uttar Pradesh 201307.</h6>
+      
+         <a href="ss.ejs" class="btn btn-primary">show</a>
+         <a href="#" class="btn btn-primary">Location</a>
+       </div>
+     </div>
+   </div> 
+   
+
+   <div class="mar">
+       <div class="card" style="width: 24rem; height: 30rem;">
+          <a href="js1.ejs"> <img src="\images\js-garden-noida-extension-greater-noida-noida-1.png" class="card-img-top " alt="..."></a>
+           <div class="card-body">
+             <h5 class="card-title">Js garden (noida extension), Greater Noida, Noida</h5>
+             <h6>JS Garden, Chaturbhuj Chauraha, Opposite Panchmukhi Hanuman Mandir Sector -2, Greater Noida-201309.</h6>
+           
+             <a href="js1.ejs" class="btn btn-primary">show</a>
+             <a href="#" class="btn btn-primary">Location</a>
+           </div>
+         </div>
+       </div> 
+       
+       </div>
+                                           
+</section>
+
+
+
+<section id="noida">
+
+<div class="cardcontainer ">
+    
+       
+<div class="mar">
+<div class="card" style="width: 24rem; height: 30rem;">
+  <a href="js.ejs"> <img src="\images\j-s-garden-noida-delhi-1.png" class="card-img-top " alt="..."></a>
+   <div class="card-body">
+     <h5 class="card-title">J s garden, Sector 132, Noida<br></h5>
+<h6> J S Garden, A36, Block A, Sector 132, Noida, Uttar Pradesh 201304. </h6>   
+  
+     <a href="js.ejs" class="btn btn-primary">show</a>
+     <a href="#" class="btn btn-primary">Location</a>
+   </div>
+ </div>
+</div> 
+
+<div class="mar">
+   <div class="card" style="width: 24rem; height: 30rem;">
+      <a href="ss.ejs"> <img src="\images\ss-grand-party-lawn-and-banquet-noida-delhi.png" class="card-img-top " alt="..."></a>
+       <div class="card-body">
+         <h5 class="card-title">Ss grand party lawn and banquet, Sector 70, Noida<br></h5>
+         <h6>SS Grand Party Lawn And Banquet, Basai, Sector 70, Noida, Uttar Pradesh 201307.</h6>
+      
+         <a href="ss.ejs" class="btn btn-primary">show</a>
+         <a href="#" class="btn btn-primary">Location</a>
+       </div>
+     </div>
+   </div> 
+   
+
+   <div class="mar">
+       <div class="card" style="width: 24rem; height: 30rem;">
+          <a href="js1.ejs"> <img src="\images\js-garden-noida-extension-greater-noida-noida-1.png" class="card-img-top " alt="..."></a>
+           <div class="card-body">
+             <h5 class="card-title">Js garden (noida extension), Greater Noida, Noida</h5>
+             <h6>JS Garden, Chaturbhuj Chauraha, Opposite Panchmukhi Hanuman Mandir Sector -2, Greater Noida-201309.</h6>
+           
+             <a href="js1.ejs" class="btn btn-primary">show</a>
+             <a href="#" class="btn btn-primary">Location</a>
+           </div>
+         </div>
+       </div> 
+       
+       </div>
+
+</section>
+
+
+                     
+                         <section id="dwarka">
+
+                            <div class="cardcontainer ">
+    
+       
+                               <div class="mar">
+                               <div class="card" style="width: 24rem; height: 30rem;">
+                                  <a href="raddison.ejs"> <img src="\images\raddison.png" class="card-img-top " alt="..."></a>
+                                   <div class="card-body">
+                                     <h5 class="card-title">Radisson blu, Dwarka, Delhi<br></h5>
+                              <h6> Radisson Blu, Plot 4, Sector 13, Dwarka, New Delhi, Delhi 110075. </h6>   
+                                    
+                                     <a href="raddison.ejs" class="btn btn-primary">show</a>
+                                     <a href="#" class="btn btn-primary">Location</a>
+                                   </div>
+                                 </div>
+                               </div> 
+                               
+                               <div class="mar">
+                                   <div class="card" style="width: 24rem; height: 30rem;">
+                                      <a href="surya.ejs"> <img src="\images\surya-grand-banquet.png" class="card-img-top " alt="..."></a>
+                                       <div class="card-body">
+                                         <h5 class="card-title">Surya grand banquet, Dwarka, Delhi.<br></h5>
+                                         <h6>Surya Grand Banquet, Dattaram Marg, Sector - 7, Near Palam Dwarka Flyover,New Delhi 110075.</h6>
+                                     
+                                         <a href="surya.ejs" class="btn btn-primary">show</a>
+                                         <a href="#" class="btn btn-primary">Location</a>
+                                       </div>
+                                     </div>
+                                   </div> 
+                                   
+                               
+                                   <div class="mar">
+                                       <div class="card" style="width: 24rem; height: 30rem;">
+                                          <a href="vivanta.ejs"> <img src="\images\vivanta-by-taj.png" class="card-img-top " alt="..."></a>
+                                           <div class="card-body">
+                                             <h5 class="card-title">Vivanta by taj, Dwarka, Delhi</h5>
+                                             <h6>Vivanta by Taj, Metro Station Road, Sector 21, Dwarka, New Delhi, Delhi 110075.</h6>
+                                        
+                                             <a href="vivanta.ejs" class="btn btn-primary">show</a>
+                                             <a href="#" class="btn btn-primary">Location</a>
+                                           </div>
+                                         </div>
+                                       </div> 
+                                       
+                                       </div>
+
+
+                         </section>
+
+                         <section id="rohini">
+                          
+                           <div class="cardcontainer ">
+    
+       
+                             <div class="mar">
+                             <div class="card" style="width: 24rem; height: 30rem;">
+                                <a href="/sevenseas.ejs"> <img src="\images\seven-seas-hotel-rohini-delhi.png" class="card-img-top " alt="..."></a>
+                                 <div class="card-body">
+                                   <h5 class="card-title">Seven seas hotel, Rohini, Delhi<br></h5>
+                            <h6>Seven Seas Hotel, 12, Mangalam Place, Sector 3, Rohini, New Delhi, Delhi 110085. </h6>   
+
+                                   <a href="/sevenseas.ejs" class="btn btn-primary">show</a>
+                                   <a href="#" class="btn btn-primary">Location</a>
+                                 </div>
+                               </div>
+                             </div> 
+                             
+                             <div class="mar">
+                                 <div class="card" style="width: 24rem; height: 30rem;">
+                                    <a href="grandutsav.ejs"> <img src="\images\grand-utsav-rohini-delhi.png" class="card-img-top " alt="..."></a>
+                                     <div class="card-body">
+                                       <h5 class="card-title">Grand Utsav, Rohini, Delhi<br></h5>
+                                       <h6>Grand Utsav, Pocket B-10, Rohini Sector 3, Delhi - 110085, Near Jaipur Golden Hospital .</h6>
+                                       
+                                       <a href="grandutsav.ejs" class="btn btn-primary">show</a>
+                                       <a href="#" class="btn btn-primary">Location</a>
+                                     </div>
+                                   </div>
+                                 </div> 
+                                 
+                             
+                                 <div class="mar">
+                                     <div class="card" style="width: 24rem; height: 30rem;">
+                                        <a href="ddclub.ejs"> <img src="\images\dd-club-rohini-delhi.png" class="card-img-top " alt="..."></a>
+                                         <div class="card-body">
+                                           <h5 class="card-title">Dd club, Rohini, Delhi</h5>
+                                           <h6>DD Club, Rajapur, Pocket 16, Sector 13, Rohini, Delhi, 110085.</h6>
+                                          
+                                           <a href="ddclub.ejs" class="btn btn-primary">show</a>
+                                           <a href="#" class="btn btn-primary">Location</a>
+                                         </div>
+                                       </div>
+                                     </div> 
+                                     
+                                     </div>
+
+
+                         </section>
+                         <section id="connaught">
+
+                           <div class="cardcontainer ">
+    
+       
+                             <div class="mar">
+                             <div class="card" style="width: 24rem; height: 30rem;">
+                                <a href="raddison1.ejs"> <img src="\images\radisson-blu-marina-connaught-place-delhi.png" class="card-img-top " alt="..."></a>
+                                 <div class="card-body">
+                                   <h5 class="card-title">Radisson blu marina, Connaught Place, Delhi<br></h5>
+                            <h6> Radisson Blu Marina, G-59, Connaught Cir, Block G, Connaught Place, New Delhi, Delhi 110001. </h6>   
+                           
+                                   <a href="raddison1.ejs" class="btn btn-primary">show</a>
+                                   <a href="#" class="btn btn-primary">Location</a>
+                                 </div>
+                               </div>
+                             </div> 
+                             
+                             <div class="mar">
+                                 <div class="card" style="width: 24rem; height: 30rem;">
+                                    <a href="le.ejs"> <img src="\images\Le Meridien 3.png" class="card-img-top " alt="..."></a>
+                                     <div class="card-body">
+                                       <h5 class="card-title">Le meridien, Connaught Place, Delhi<br></h5>
+                                       <h6>Le Meridien, Windsor Place, New Delhi, Delhi 110001.</h6>
+                                       
+                                       <a href="le.ejs" class="btn btn-primary">show</a>
+                                       <a href="#" class="btn btn-primary">Location</a>
+                                     </div>
+                                   </div>
+                                 </div> 
+                                 
+                             
+                                 <div class="mar">
+                                     <div class="card" style="width: 24rem; height: 30rem;">
+                                        <a href="park.ejs"> <img src="\images\the-park-hotel-connaught-place-delhi.png" class="card-img-top " alt="..."></a>
+                                         <div class="card-body">
+                                           <h5 class="card-title">The park hotel, Connaught Place, Delhi</h5>
+                                           <h6>The Park Hotel, 15, Sansad Marg, Hanuman Road Area, Connaught Place, New Delhi, Delhi 110001.</h6>
+                                     
+                                           <a href="park.ejs" class="btn btn-primary">show</a>
+                                           <a href="#" class="btn btn-primary">Location</a>
+                                         </div>
+                                       </div>
+                                     </div> 
+                                     
+                                     </div>
+
+
+                         </section>
+                         <section id="shahdara">
+
+                           <div class="cardcontainer ">
+    
+       
+                             <div class="mar">
+                             <div class="card" style="width: 24rem; height: 30rem;">
+                                <a href="pearlgrand.ejs"> <img src="\images\pearl-grand-galaxy-shahdara-delhi.png" class="card-img-top " alt="..."></a>
+                                 <div class="card-body">
+                                   <h5 class="card-title">Pearl grand galaxy (surajmal vihar), Shahdara, Delhi<br></h5>
+                            <h6> Pearl Grand Galaxy Banquet, Plot No. 3, C.B.D Ground, Opposite Kempinski, Vishwas Nagar Extension, Shahdara, Vishwas Nagar, New Delhi, Delhi 110032. </h6>   
+                                  
+                                   <a href="pearlgrand.ejs" class="btn btn-primary">show</a>
+                                   <a href="#" class="btn btn-primary">Location</a>
+                                 </div>
+                               </div>
+                             </div> 
+                             
+                             <div class="mar">
+                                 <div class="card" style="width: 24rem; height: 30rem;">
+                                    <a href="leela.ejs"> <img src="\images\The_Leela_Ambience_Convention_Hotel-Delhi-Convention_hall-628980.png" class="card-img-top " alt="..."></a>
+                                     <div class="card-body">
+                                       <h5 class="card-title">Leela ambience convention hotel, Shahdara, Delhi
+                                         <br></h5>
+                                       <h6>Leela Ambiance Convention Hotel, 1 Cbd, Maharaja Surajmal Road, Near Yamuna Sports Complex, Vishwas Nagar Extension, Vishwas Nagar, Shahdara, Delhi, 110032.</h6>
+                                     
+                                       <a href="leela.ejs" class="btn btn-primary">show</a>
+                                       <a href="#" class="btn btn-primary">Location</a>
+                                     </div>
+                                   </div>
+                                 </div> 
+                                 
+                             
+                                 <div class="mar">
+                                     <div class="card" style="width: 24rem; height: 30rem;">
+                                        <a href="radha.ejs"> <img src="\images\radha-palace-shahdara-delhi.png" class="card-img-top " alt="..."></a>
+                                         <div class="card-body">
+                                           <h5 class="card-title">Radha palace, Shahdara, Delhi</h5>
+                                           <h6>Radha Palace, Aggarwal Fun City Mall, CBD Ground, Near Karkardooma Court, Vishwas Nagar Extension, Vishwas Nagar, Shahdara, New Delhi, Delhi 110032.</h6>
+                                         
+                                           <a href="radha.ejs" class="btn btn-primary">show</a>
+                                           <a href="#" class="btn btn-primary">Location</a>
+                                         </div>
+                                       </div>
+                                     </div> 
+                                     
+                                     </div>
+
+
+                         </section>
+                  
+                         <%- include('footer1')%>
+
+                           <script src="\js\script2.js"></script>
+                           <script src="\js\script1.js"></script>
+</body>
+</html>

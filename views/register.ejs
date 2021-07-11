@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="google-signin-client_id" content="27302682434-njglblgi05r4urtv55v1hc3e824mt2a4.apps.googleusercontent.com">
+      <!-- Font  -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Bootstrap CDN  -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous"
+      />
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="\css\styles1.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      </head>
+    <body>
+
+      <nav class="navbar navbar-expand-lg ">
+       
+         <button class="navbar-toggler "   type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" >
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <a class="navbar-brand" href="index.ejs">Part<span class="venue">yVenue</span></a>
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+             <ul class="navbar-nav links ">
+                 <li class="nav-item active">
+                     <a class="nav-link home" href="index.ejs">Home<span class="sr-only">(current)</span></a>
+                 </li>
+               
+                     
+                         <li class="nav-item contact">
+                             <a class="nav-link" href="mail.ejs">Contact</a>
+                         </li>
+                        
+                 </li>
+             </ul>
+               
+             <ul class="navbar-nav ml-auto signs ">
+             
+    
+                      <li class="nav-item signin">
+                          <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i>Sign in </a>
+            </li>
+                      <li class="nav-item signup">
+                       <a class="nav-link" href="/register"><i class="fas fa-user-plus"></i>Sign up</a>
+                   </li>
+   
+            </ul>
+          
+                  
+                   </div>
+                   </nav>
+   <section id="register">
+    <div class="bgup-modal">
+        <div class="contentup-modal">
+         
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mx-auto">
+                    <div id="second">
+                        <div class="myform form ">
+                             <div class="logo mb-3">
+                                 <div class="col-md-12 text-center">
+                                    <h1>Sign up</h1>
+                                 </div>
+                            </div>
+                            <% if(typeof err !='undefined' ){ %>
+                              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                  <strong> Error </strong>
+                                  <%= err %>.
+                                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>
+                              <% } %>
+              
+                        
+                              <i class="fas fa-users" style="font-size: 70px;"></i>
+                            <form action="/register" method="POST" >
+                           
+                               <div class="form-group">
+                                  <label for="exampleInputEmail1">First Name</label>
+                                  <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                               </div>
+                               <div class="form-group">
+                                  <label for="exampleInputEmail1">Last Name</label>
+                                  <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+                               </div>
+                               <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                               </div>
+                               <div class="form-group">
+                                  <label for="exampleInputEmail1">Contact-no.</label>
+                                  <input type="tel"  name="contact" class="form-control" id="contact" pattern="[0-9]{10}"  aria-describedby="emailHelp" placeholder="Enter Contact number">
+                               </div>
+                               <div class="form-group">
+                                  <label for="exampleInputEmail1">Password</label>
+                                  <input type="password" name="password" id="password" minlength="8" maxlength= "25" pattern="[A-Za-z1-9]{3}{@}{!}{#}{$}"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                                  <span class="eye" style="position: absolute; top: 520px;" onclick="myFunction()">
+                                    <i id="hide1" class="fa fa-eye"></i>
+                                      <i id="hide2" class="fa fa-eye-slash"></i>
+                                 </span>
+                                </div>
+                               <div class="col-md-12 text-center mb-3">
+                                  <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Sign Up</button>
+                               </div>
+                               <div class="col-md-12 ">
+                                  <div class="form-group">
+                                     <p class="text-center"><a href="/login" id="signin">Already have an account?</a></p>
+                                  </div>
+                               </div>
+                                </div>
+                            </form>
+                      
+                     </div>
+                 </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <script>
+        function myFunction(){
+           var x = document.getElementById('password')
+           var y = document.getElementById('hide1')
+           var z = document.getElementById('hide2')
+           if(x.type==='password'){
+              x.type='text';
+              y.style.display='block';
+             z.style.display='none'
+           }
+          else{x.type='password'
+            
+              y.style.display='none';
+             z.style.display='block'
+           }
+        }
+     </script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+  </html>

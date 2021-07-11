@@ -1,0 +1,64 @@
+body{
+    font-family: sans-serif;
+}
+#sidebar{
+    background-color:rgb(146, 49, 65);
+    max-width:280px ;
+    border-radius:0 10px 0 0;
+    width: 280px;
+position: absolute;
+top: 0;
+bottom: 0;
+}
+nav{
+    padding-top: 70px;
+    
+}
+ a{
+     display: block;
+     text-decoration: none;
+     color: white;
+     padding: 15px 30px;
+    
+ }
+ a.active{
+     background-color: rgb(131, 26, 78);
+         border-left:5px solid darkgreen;
+ }
+ a:hover{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+     transition: all 0.3s ease-in-out;
+    border-left:5px solid darkgreen;
+    background-color:  rgb(131, 26, 78);
+ }
+ .heading{
+    padding: 15px 30px;
+    font-size: 1.6rem;
+     color: white;
+     margin-bottom: 20px;
+ }
+ header{
+     display: flex;
+     position: absolute;
+     right: 280px;
+     top: 90px;
+        
+ }
+ .card{
+     width: 280px;
+     margin-left:  40px;
+ }
+ #search{
+    
+     margin-top: 15px;
+     position: absolute;
+     left: 320px;
+     width: 300px;
+     height: 30px;
+     border-radius:50px;
+     border-color:  rgb(235, 223, 223);
+     color: gray;
+ }

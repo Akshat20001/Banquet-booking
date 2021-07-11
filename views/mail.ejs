@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>partyvenue</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-signin-client_id" content="27302682434-njglblgi05r4urtv55v1hc3e824mt2a4.apps.googleusercontent.com">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="\css\styles1.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    *{
+  box-sizing: border-box;
+}
+
+body{
+  background:#ffffff;
+  color:#485e74;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+
+.container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+padding-top: 5px;
+margin-left: 490px;
+}
+
+.brand span{
+  color:#485e74;;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.company-info{
+  background:#c9e6ff;
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+
+.contact{
+  background:#f9feff;
+}
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
+
+.contact form button{
+  background:#c9e6ff;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+  
+}
+</style>
+</head>
+<body>
+  <%- include('navbar')%>
+          
+  <ul class="navbar-nav ml-auto signs ">
+                
+                     
+   <% if(logged){ %>
+    
+  <li class="nav-item signout">
+      <a class="nav-link" href="/logout"><i class="fas fa-user-plus"></i>Sign out</a>
+  </li>
+      <% }else{ %>
+          <li class="nav-item signin">
+              <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i>Sign in </a>
+</li>
+          <li class="nav-item signup">
+           <a class="nav-link" href="/register"><i class="fas fa-user-plus"></i>Sign up</a>
+       </li>
+       
+        <% } %>
+
+
+
+
+
+</ul>
+</div>
+</nav>
+
+  <div class="container">
+    <h1 class="brand">Contact</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+
+        <ul>
+          <li><i class="fa fa-road"></i> st 4 </li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@gmail.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+     
+        <form action='contact-us' method="POST" >
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id='name 'required>
+          </p>
+       
+          <p>
+            <label>Email Address</label>
+            <input  type="email" name="email" id = 'email'required>
+          </p>
+      
+          <p class="full">
+            <label>Message</label>
+            <textarea  name="message" rows="5" id = 'message'></textarea>
+          </p>
+          <label for="myfile">Select files</label>
+          <br> <input  type="file" id="myfile" name="myfile" multiple><br><br>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+   
+
+<footer id="footer">
+  
+  <div class="social-icons">
+    <a style="color:black;" href="https://www.facebook.com/campaign/landing.php?campaign_id=1653993517&extra_1=s%7Cc%7C318504235901%7Ce%7Cfacebook%20%27%7C&placement=&creative=318504235901&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D1653993517%26adgroupid%3D63066387003%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-360705453827%26loc_physical_ms%3D9061715%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAn7L-BRBbEiwAl9UtkH_bE0iOHC7ZU9O0Cr0xOLKWB8nBH402NAQ_WnSKfHFfhIIhQQsDwxoCtOcQAvD_BwE"><i class="fab fa-facebook" ></i></a>
+  <a style="color:black;" href="https://www.instagram.com/"><i class="fab fa-instagram" ></i></a>
+ <a style="color:black;"  href="https://twitter.com/"> <i class="fab fa-twitter-square"></i></a>
+  </div>
+    
+
+  <p>© Copyright 2020 partyvenue</p>
+
+</footer>
+</body>
+</html>
